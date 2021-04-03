@@ -1,11 +1,17 @@
 <template>
-  <div>
-    <a v-for="(icon, i) in links" :key="i" :href="icon.link" class="mr-3">
-      <i
-        class="fab text-3xl text-white hover:text-gray-200"
-        :class="icon.type"
-      ></i>
-    </a>
+  <div class="flex flex-row">
+    <div
+      v-for="(icon, i) in links"
+      :key="i"
+      class="transition transform hover:-translate-y-0.5 hover:scale-110"
+    >
+      <a :href="icon.link" target="_blank" class="mx-2">
+        <i
+          class="fab text-3xl text-white hover:text-gray-200"
+          :class="icon.type"
+        ></i>
+      </a>
+    </div>
   </div>
 </template>
 
