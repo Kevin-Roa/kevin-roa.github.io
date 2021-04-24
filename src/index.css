@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 760px) {
+	* {
+		font-family: 'Montserrat', sans-serif;
+		scroll-behavior: smooth;
+		scroll-snap-type: y mandatory;
+	}
+}
