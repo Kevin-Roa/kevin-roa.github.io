@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
 	HouseFill,
 	PersonFill,
@@ -9,11 +10,11 @@ import {
 
 const Nav = () => {
 	const options = [
-		{ label: 'Home', icon: HouseFill },
-		{ label: 'About', icon: PersonFill },
-		{ label: 'Projects', icon: ArchiveFill },
-		{ label: 'Resume', icon: FileEarmarkTextFill },
-		{ label: 'Contact', icon: EnvelopeFill }
+		{ label: 'Home', icon: HouseFill, link: '/' },
+		{ label: 'About', icon: PersonFill, link: '/about' },
+		{ label: 'Projects', icon: ArchiveFill, link: '/projects' },
+		{ label: 'Resume', icon: FileEarmarkTextFill, link: '/resume' },
+		{ label: 'Contact', icon: EnvelopeFill, link: '/contact' }
 	];
 	const [selected, setSelected] = useState(0);
 	const isSelected = (i) => (selected === i ? 'selected' : '');
@@ -30,17 +31,18 @@ const Nav = () => {
 				onMouseLeave={() => setHovering(false)}
 			>
 				{options.map((option, i) => (
-					<button
-						className={`nav-item w-full h-12 pl-5 mx-3 rounded-r-full my-1 uppercase text-center bw-text flex 						items-center font-medium 
+					<Link
+						className={`nav-item w-full h-12 pl-5 mx-3 rounded-r-full my-1 uppercase text-center text-bw flex 						items-center font-medium 
 							${isSelected(i)} ${isHovering()}`}
 						onClick={() => setSelected(i)}
+						to={option.link}
 						key={i}
 					>
 						<div className={`nav-icon w-5 mr-4 ${isHovering()}`}>
 							<option.icon size={20} />
 						</div>
 						<p className={`${hovering ? 'ml-0' : 'ml-5'}`}>{option.label}</p>
-					</button>
+					</Link>
 				))}
 			</div>
 		</div>
