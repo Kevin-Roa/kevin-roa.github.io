@@ -1,20 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kevin Roa | Software Engineer</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap" rel="stylesheet">
-    <!-- Google Fonts -->
-
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/logo.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/8738070f70.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Kevin Roa | Software Engineering at UTD</title>
+		<meta
+			name="description"
+			content="Kevin Roa's portfolio website. Find out more about Kevin Roa..."
+		/>
+		<meta
+			name="keywords"
+			content="Kevin Roa, Software Engineer, Software Developer, Software, Engineering, Computer Science, CS, SE, Developer, Dev, Portfolio"
+		/>
+		<style>
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 400;
+			}
+			#root {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				height: 100vh;
+				background-color: #aaf2ff;
+			}
+			#construction {
+				margin: 10px;
+				text-align: center;
+			}
+			.card {
+				max-width: 500px;
+				height: auto;
+				background-color: #fafafa;
+				border-radius: 20px;
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+				overflow: auto;
+				padding: 25px;
+				margin: 25px;
+			}
+			.card-title {
+				font-size: 2.5rem;
+				font-weight: 500;
+				margin-bottom: 15px;
+			}
+			.card-desc {
+				margin-bottom: 15px;
+				text-align: justify;
+			}
+			.highlight {
+				color: #ff8800;
+			}
+			.utd {
+				background-color: transparent;
+				text-decoration: none;
+			}
+			.utd:hover {
+				text-decoration: dashed underline;
+			}
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			li a {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				text-decoration: none;
+				color: inherit;
+				padding-top: 15px;
+			}
+			a:hover {
+				color: #ff8800;
+			}
+			i {
+				font-size: 25px;
+				color: #ff9a28;
+				min-width: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="root">
+			<h1 id="construction">🚧 Site Under Construction 🚧</h1>
+			<div class="card">
+				<h1 class="card-title">Kevin Roa</h1>
+				<div class="card-desc">
+					<p>
+						Hello! I'm Kevin Roa, a junior studying at
+						<a class="utd highlight" href="https://www.utdallas.edu/"
+							>UT Dallas
+						</a>
+						working towards a BS in Software Engineering. I am currently looking
+						for a summer 2022 internship. If you would like to contact me or
+						find out more about my work, please use the following:
+					</p>
+				</div>
+				<ul>
+					<li>
+						<a href="#">
+							<i class="fa-solid fa-phone"></i>
+							<p>(408) 316-2968</p>
+						</a>
+					</li>
+					<li>
+						<a href="mailto:kevinroabusiness@gmail.com" target="_blank">
+							<i class="fa-solid fa-envelope"></i>
+							<p>Kevinroabusiness@gmail.com</p>
+							<p class="highlight" style="margin-left: 15px">(Preferred)</p>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/kevinroa" target="_blank">
+							<i class="fa-brands fa-linkedin-in"></i>
+							<p>LinkedIn.com/in/kevinroa</p>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.github.com/kevin-roa" target="_blank">
+							<i class="fa-brands fa-github-alt"></i>
+							<p>Github.com/kevin-roa</p>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/kevinroa" target="_blank">
+							<i class="fa-solid fa-file-invoice" style="padding-left: 2px"></i>
+							<p>Resume</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
 </html>
